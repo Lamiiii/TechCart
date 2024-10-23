@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../assets/JS/main.js" defer></script>
+  <link rel="stylesheet" href="../main.css" />
+</head>
+
+<body>
+  <!-- header start -->
+  <header class="bg-cyan-600 grid p-6 grid-cols-12">
+    <div class="col-span-4 items-center justify-center md:flex hidden">
+      <img src="../img/logo-white3 (1).png" alt="Company Logo" class="w-80" />
+    </div>
+
+    <div
+      class="col-span-4 items-center justify-center relative hidden md:flex"
+    >
+      <input
+        type="text"
+        id="search"
+        class="border p-4 rounded-sm w-96 px-16 focus:outline-none focus:ring-0 focus:border-transparent"
+        aria-label="Search for products"
+      />
+      <span class="text-gray-400 absolute -ml-28"
+        >Search for products...</span
+      >
+      <svg
+        class="absolute -ml-72"
+        width="34"
+        height="34"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+          fill="#cccc"
+        ></path>
+      </svg>
+    </div>
+
+    <div
+      class="col-span-4 items-center justify-center text-center md:flex hidden"
+    >
+      <div class="flex-col">
+        <svg
+          fill="#ffff"
+          width="37px"
+          height="37px"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"
+          ></path>
+        </svg>
+        <span class="text-white text-sm -ml-5 font-bold"
+          >SIGN IN | REGISTER</span
+        >
+      </div>
+
+      <span class="flex-col ml-12">
+        <svg
+          width="37px"
+          height="37px"
+          viewBox="0 0 24 24"
+          fill="#fff"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M12 12H15"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M12 16H15"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V7H9V5Z"
+              stroke="none"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <circle cx="9" cy="12" r="1" fill="#fff"></circle>
+            <circle cx="9" cy="16" r="1" fill="#fff"></circle>
+          </g>
+        </svg>
+        <span class="text-white text-sm -ml-5 font-bold">SHOPPING LIST</span>
+      </span>
+
+      <span class="flex-col ml-12">
+        <svg
+          fill="#ffffff"
+          width="37px"
+          height="37px"
+          viewBox="0 0 1024 1024"
+          aria-hidden="true"
+        >
+          <path
+            d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+          ></path>
+        </svg>
+        <span class="text-white text-sm -ml-5 font-bold"
+          >CART / AUD $0.00</span
+        >
+      </span>
+    </div>
+
+    <div class="col-span-4 flex md:hidden items-center justify-center">
+      <svg
+        width="39px"
+        height="39px"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <path
+            d="M7 8H21M7 12H21M7 16H21M3 8H3.01M3 12H3.01M3 16H3.01"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </g>
+      </svg>
+
+
+
+      
+    </div>
+
+    <div
+      class="col-span-4 flex justify-center items-center relative md:hidden"
+    >
+      <img src="../img/logo-white3 (1).png" alt="Company Logo" />
+    </div>
+
+    <div
+      class="col-span-4 flex text-center md:hidden ml-12 items-center justify-center"
+    >
+      <div class="flex-col">
+        <svg
+          fill="#ffff"
+          width="35px"
+          height="35px"
+          viewBox="0 0 32 32"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"
+          ></path>
+        </svg>
+      </div>
+
+      <span class="flex-col flex items-center justify-center">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g
+            id="SVGRepo_tracerCarrier"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M11.2691 4.41115C11.5006 3.89177 11.6164 3.63208 11.7776 3.55211C11.9176 3.48263 12.082 3.48263 12.222 3.55211C12.3832 3.63208 12.499 3.89177 12.7305 4.41115L14.5745 8.54808C14.643 8.70162 14.6772 8.77839 14.7302 8.83718C14.777 8.8892 14.8343 8.93081 14.8982 8.95929C14.9705 8.99149 15.0541 9.00031 15.2213 9.01795L19.7256 9.49336C20.2911 9.55304 20.5738 9.58288 20.6997 9.71147C20.809 9.82316 20.8598 9.97956 20.837 10.1342C20.8108 10.3122 20.5996 10.5025 20.1772 10.8832L16.8125 13.9154C16.6877 14.0279 16.6252 14.0842 16.5857 14.1527C16.5507 14.2134 16.5288 14.2807 16.5215 14.3503C16.5132 14.429 16.5306 14.5112 16.5655 14.6757L17.5053 19.1064C17.6233 19.6627 17.6823 19.9408 17.5989 20.1002C17.5264 20.2388 17.3934 20.3354 17.2393 20.3615C17.0619 20.3915 16.8156 20.2495 16.323 19.9654L12.3995 17.7024C12.2539 17.6184 12.1811 17.5765 12.1037 17.56C12.0352 17.5455 11.9644 17.5455 11.8959 17.56C11.8185 17.5765 11.7457 17.6184 11.6001 17.7024L7.67662 19.9654C7.18404 20.2495 6.93775 20.3915 6.76034 20.3615C6.60623 20.3354 6.47319 20.2388 6.40075 20.1002C6.31736 19.9408 6.37635 19.6627 6.49434 19.1064L7.4341 14.6757C7.46898 14.5112 7.48642 14.429 7.47814 14.3503C7.47081 14.2807 7.44894 14.2134 7.41394 14.1527C7.37439 14.0842 7.31195 14.0279 7.18708 13.9154L3.82246 10.8832C3.40005 10.5025 3.18884 10.3122 3.16258 10.1342C3.13978 9.97956 3.19059 9.82316 3.29993 9.71147C3.42581 9.58288 3.70856 9.55304 4.27406 9.49336L8.77835 9.01795C8.94553 9.00031 9.02911 8.99149 9.10139 8.95929C9.16534 8.93081 9.2226 8.8892 9.26946 8.83718C9.32241 8.77839 9.35663 8.70162 9.42508 8.54808L11.2691 4.41115Z"
+              stroke="#fff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </g>
+        </svg>
+      </span>
+
+      <span class="flex-col flex items-center justify-center">
+        <svg
+          fill="#ffffff"
+          width="35px"
+          height="35px"
+          viewBox="0 0 1024 1024"
+          aria-hidden="true"
+        >
+          <path
+            d="M1015.66 284a31.82 31.82 0 0 0-25.998-13.502H310.526l-51.408-177.28c-20.16-69.808-68.065-77.344-87.713-77.344H34.333c-17.569 0-31.777 14.224-31.777 31.776S16.78 79.425 34.332 79.425h137.056c4.336 0 17.568 0 26.593 31.184l176.848 649.936c3.84 13.712 16.336 23.183 30.591 23.183h431.968c13.409 0 25.376-8.4 29.905-21.024l152.256-449.68c3.504-9.744 2.048-20.592-3.888-29.024zM815.026 720.194H429.539L328.387 334.066h616.096zM752.003 848.13c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80zm-288 0c-44.192 0-80 35.808-80 80s35.808 80 80 80 80-35.808 80-80-35.808-80-80-80z"
+          ></path>
+        </svg>
+      </span>
+    </div>
+  </header>
+
+  <!-- header end -->
+
+
+  <!-- section start -->
+
+
+  <div
+    class="grid-cols-12 mx-auto mt-8 sm:hidden md:hidden lg:flex gap-24 flex justify-center items-center font-bold text-xl cursor-pointer bg-white">
+    <div class="flex items-center justify-center hover:text-sky-400">
+      <a href="./home.html">SHOW PRODUCTS</a>
+      <svg width="34px" height="34px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g id="SVGRepo_iconCarrier">
+          <rect width="24" height="24" fill="white"></rect>
+          <path d="M17 9.5L12 14.5L7 9.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+      </svg>
+    </div>
+    <a class="hover:text-sky-400" href="">CLERANCE</a>
+    <a class="hover:text-sky-400" href="brands.html">BRANDS</a>
+    <a class="hover:text-sky-400" href="delivery.html">DELIVERY</a>
+    <a class="hover:text-sky-400" href="faqs.html">FAQS</a>
+    <a class="hover:text-sky-400" href="help.html">HELP</a>
+  </div>
+
+  <div class="items-center justify-center relative flex lg:hidden mt-3">
+    <input type="text" id="search"
+      class="border p-4 rounded-sm px-16 focus:outline-none focus:ring-0 focus:border-transparent w-9/12"
+      aria-label="Search for products" />
+    <span class="text-gray-400 absolute -ml-28">Search for products...</span>
+    <svg class="absolute -ml-72" width="34" height="34" viewBox="0 0 24 24" fill="none"
+      xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M15 10.5C15 12.9853 12.9853 15 10.5 15C8.01472 15 6 12.9853 6 10.5C6 8.01472 8.01472 6 10.5 6C12.9853 6 15 8.01472 15 10.5ZM14.1793 15.2399C13.1632 16.0297 11.8865 16.5 10.5 16.5C7.18629 16.5 4.5 13.8137 4.5 10.5C4.5 7.18629 7.18629 4.5 10.5 4.5C13.8137 4.5 16.5 7.18629 16.5 10.5C16.5 11.8865 16.0297 13.1632 15.2399 14.1792L20.0304 18.9697L18.9697 20.0303L14.1793 15.2399Z"
+        fill="#cccc"></path>
+    </svg>
+  </div>
+
+  <!-- section end -->
+
+  <!-- section start -->
+  <div class="bg-sky-600 p-14 relative flex justify-center items-center shadow-xl">
+    <h2 class="text-white font-bold text-4xl absolute left-12">
+      Brands</h2>
+    <h4 class="text-white font-semibold text-xl absolute right-12">
+      Brands/ HELP
+    </h4>
+  </div>
+
+  <!-- section end -->
+
+
+  <!-- section start -->
+  <div class="all-letter container mx-auto text-wrap cursor-pointer underline decoration-slate-600">
+    <div class="flex justify-center text-center gap-5 mt-10  text-xl">
+        <span data-target="letter2">A</span>
+        <span data-target="letter3">B</span>
+        <span data-target="letter4">C</span>
+        <span data-target="letter5">D</span>
+        <span data-target="letter6">G</span>
+        <span data-target="letter7">H</span>
+        <span data-target="letter8">I</span>
+        <span data-target="letter9">J</span>
+        <span data-target="letter10">K</span>
+        <span data-target="letter11">L</span>
+        <span data-target="letter12">M</span>
+        <span data-target="letter13">N</span>
+        <span>O</span>
+        <span>P</span>
+        <span>Q</span>
+        <span>R</span>
+        <span>S</span>
+        <span>T</span>
+        <span>U</span>
+        <span>V</span>
+        <span>W</span>
+        <span>X</span>
+        <span>Y</span>
+        <span>Z</span>
+    </div>
+</div>
+   
+
+<div id="letter2" class="all-letter container mx-auto mt-16">
+  <div class="font-bold text-xl mt-20">A</div>
+  <div class="container mx-auto flex justify-between  align-center gap-10 mt-5">
+      <img class="image-brands" src="../img/a1.png">
+      <img class="image-brands" src="../img/a2.png">
+      <img class="image-brands" src="../img/a3.png">
+      <img class="image-brands" src="../img/a4.png">
+      <img class="image-brands" src="../img/a5.png">
+      <img class="image-brands" src="../img/a6.png">
+      <img class="image-brands" src="../img/antec-logo.png">
+  </div>
+  <div class="container mx-auto flex justify-between align-center gap-10 mt-5">
+      <img class="image-brands" src="../img/aoc-logo.png">
+      <img class="image-brands" src="../img/a6.png">
+      <img class="image-brands" src="../img/antec-logo.png">
+      <img class="image-brands" src="../img/a9.png">
+      <img class="image-brands" src="../img/a10.png">
+      <img class="image-brands" src="../img/a5.png">
+      <img class="image-brands" src="../img/a6.png">
+  </div>
+  <div class="container mx-auto flex  align-center gap-10 mt-5">
+      <img class="image-brands" src="../img/a4.png">
+      <img class="image-brands" src="../img/a5.png">
+      <img class="image-brands" src="../img/a6.png">
+  </div>
+  <hr>
+</div>
+
+
+ <div id="letter3" class=" all-letter container mx-auto mt-16">
+  <div class="font-bold text-xl mt-20">B</div>
+  <div class="container mx-auto flex align-center gap-10 mt-5">
+      <img class="image-brands" src="../img/b1.png">
+      <img class="image-brands" src="../img/b2.png">
+      <img class="image-brands" src="../img/b3.png">
+      <img class="image-brands" src="../img/b4.png">
+  </div>
+  <hr>
+</div>
+
+
+ <div id="letter4" class=" all-letter container mx-auto mt-16">
+  <div class="font-bold text-xl mt-20">C</div>
+  <div class="container mx-auto flex justify-between align-center gap-10 mt-5">
+      <img class="image-brands" src="../img/c1.png">
+      <img class="image-brands" src="../img/c2.png">
+      <img class="image-brands" src="../img/c3.png">
+      <img class="image-brands" src="../img/c4.png">
+      <img class="image-brands" src="../img/c5.png">
+      <img class="image-brands" src="../img/c6.png">
+      <img class="image-brands" src="../img/c7.png">
+  </div>
+  <div class="container mx-auto flex align-center gap-16 mt-5">
+      <img class="image-brands" src="../img/c8.png">
+      <img class="image-brands" src="../img/c9.png">
+  </div>
+  <hr>
+</div>
+
+
+<div id="letter5" class="all-letter container mx-auto mt-16">
+  <div class="font-bold text-xl mt-20">D</div>
+  <div class="container mx-auto flex align-center gap-20 mt-5">
+      <img class="image-brands" src="../img/dell-logo.png">
+      <img class="image-brands" src="../img/d2.png">
+      <img class="image-brands" src="../img/d3.png">
+  </div>
+  <hr>
+</div>
+
+         <div id="letter6" class="cotainer mx-auto mt-16 gap-10 ">
+          <div class=" container mx-auto font-bold text-xl mt-20">G</div>
+          <div>
+            <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+              <img class="image-brands" src="../img/g1.png">
+              <img class="image-brands" src="../img/g2.png">
+              <img class="image-brands" src="../img/g3.png">
+              <img class="image-brands" src="../img/g4.png">
+            </div>
+            <hr>
+          </div>
+
+
+
+          <div id="letter7" class=" cotainer mx-auto mt-16 gap-10 ">
+            <div class=" container mx-auto font-bold text-xl mt-20">H</div>
+            <div>
+              <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                <img class="image-brands" src="../img/h1.png">
+                <img class="image-brands" src="../img/h2.png">
+                <img class="image-brands" src="../img/h3.png">
+              </div>
+              <hr>
+            </div>
+
+
+
+            <div id="letter8" class="all-letter cotainer mx-auto mt-16 gap-10 ">
+              <div class=" container mx-auto font-bold text-xl mt-20">I</div>
+              <div>
+                <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                  <img class="image-brands" src="../img/i1.png">
+                  <img class="image-brands" src="../img/i2.png">
+                  <img class="image-brands" src="../img/i3.png">
+                </div>
+                <hr>
+              </div>
+
+
+
+              <div id="letter9" class=" all-letter cotainer mx-auto mt-16 gap-10 ">
+                <div class=" container mx-auto font-bold text-xl mt-20">I</div>
+                <div>
+                  <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                    <img class="image-brands" src="../img/j1.png">
+                  </div>
+                  <hr>
+                </div>
+  
+            
+                <div id="letter10" class=" all-letter cotainer mx-auto mt-16 gap-10 ">
+                  <div class=" container mx-auto font-bold text-xl mt-20">K</div>
+                  <div>
+                    <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                      <img class="image-brands" src="../img/k1.png">
+                      <img class="image-brands" src="../img/k2.png">
+                      <img class="image-brands" src="../img/k3.png">
+                      <img class="image-brands" src="../img/k4.png">
+                      <img class="image-brands" src="../img/k5.png">
+                      <img class="image-brands" src="../img/k6.png">
+                    </div>
+                    <hr>
+                  </div>
+
+
+
+                  <div id="letter11" class=" all-letter cotainer mx-auto mt-16 gap-10 ">
+                    <div class=" container mx-auto font-bold text-xl mt-20">L</div>
+                    <div>
+                      <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                        <img class="image-brands" src="../img/l1.png">
+                        <img class="image-brands" src="../img/l2.png">
+                        <img class="image-brands" src="../img/l3.png">
+                        <img class="image-brands" src="../img/l4.png">
+                        <img class="image-brands" src="../img/l5.png">
+                        <img class="image-brands" src="../img/l6.png">
+                      </div>
+                      <hr>
+                    </div>
+                  
+                    <div id="letter12" class="all-letter cotainer mx-auto mt-16 gap-10 ">
+                      <div class=" container mx-auto font-bold text-xl mt-20">M</div>
+                      <div>
+                        <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                          <img class="image-brands" src="../img/m1.png">
+                          <img class="image-brands" src="../img/m2.png">
+                          <img class="image-brands" src="../img/m3.png">
+                          <img class="image-brands" src="../img/m4.png">
+                          <img class="image-brands" src="../img/m5.png">
+                        </div>
+                        <hr>
+                      </div>
+            
+                      <div id="letter13" class=" all-letter cotainer mx-auto mt-16 gap-10 ">
+                        <div class=" container mx-auto font-bold text-xl mt-20">N</div>
+                        <div>
+                          <div class=" container mx-auto flex  align-center  gap-20 mt-5 ">
+                            <img class="image-brands" src="../img/n1.png">
+                            <img class="image-brands" src="../img/n1.png">
+                            <img class="image-brands" src="../img/n3.jpg">
+                            <img class="image-brands" src="../img/n4.png">
+                            <img class="image-brands" src="../img/n5.png">
+                          </div>
+                          <hr>
+                        </div>                   
+   <!-- section end -->
+
+  <!-- section start -->
+  <div class=" bg-sky-500 grid lg:grid-cols-3 grid-cols-1 h-64 mt-10">
+    <div class="justify-center items-center flex-col hidden lg:flex">
+      <h2 class="text-4xl text-center font-bold text-white md:text-2xl">
+        Find Us. Follow Us. Like Us.
+      </h2>
+      <p class="text-center text-white mt-2 w-full lg:flex md:hidden">
+        Keep up with our latest offers and DIY inspiration. Join in the
+        community, tag your posts with #mightyhelpful.
+      </p>
+      <div class="flex mt-3">
+        <svg
+          width="34px"
+          height="34px"
+          viewBox="-5 0 20 20"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#fff"
+        >
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path
+              d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+            ></path>
+          </g>
+        </svg>
+        <!-- Other SVGs... -->
+      </div>
+    </div>
+
+    <div
+      class="justify-center items-center flex-col -mt-3 w-full hidden lg:flex"
+    >
+      <img class="image h-30 w-44" src="../img/person.png" alt="person" />
+    </div>
+
+    <div class="flex justify-center items-center flex-col">
+      <h1 class="text-center text-4xl md:text-2xl font-bold text-white">
+        Sign up to our Newsletter
+      </h1>
+      <input
+        class="mt-12 w-96 md:w-64 focus:outline-none focus:ring-0 focus:border-transparent"
+        type="text"
+      />
+      <button class="cursor-pointer bg-black text-white w-96 md:w-64 mt-4">
+        SIGN ME UP!
+      </button>
+    </div>
+  </div>
+
+  <!-- section end -->
+
+  <!-- section start -->
+
+  <div
+    class="container-brands lg:flex lg:flex-row lg:justify-evenly sm:flex sm:flex-col bg-sky-400 p-5 lg:items-center"
+  >
+    <div class="flex flex-col">
+      <h3
+        class="text-white font-bold text-4xl flex justify-center items-center"
+      >
+        24/7 Customer Care
+      </h3>
+      <p class="text-white flex justify-center items-center">
+        Get expert advice anytime for anything you need
+      </p>
+    </div>
+    <div class="flex justify-center items-center">
+      <svg
+        id="Capa_1"
+        fill="#fff"
+        enable-background="new 0 0 512 512"
+        height="70"
+        viewBox="0 0 512 512"
+        width="70"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="m95.867 155.124c3.425 0 6.657-1.75 8.513-4.708 7.881-12.561 11.469-24.583 10.968-36.754-.463-11.262-9.697-20.083-21.023-20.083h-10.61c-11.602 0-21.041 9.439-21.041 21.041v.567c0 11.214 9.064 20.352 20.25 20.472l3.196 11.982c1.188 4.453 5.218 7.483 9.747 7.483zm-18.193-39.937v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.503 6.036 5.7.23 5.602-.772 11.269-3.047 17.127-1.773-6.336-7.573-10.746-14.167-10.746-3.018 0-5.473-2.455-5.473-5.473z"
+          ></path>
+          <path
+            d="m154.437 93.579h-10.61c-11.602 0-21.041 9.439-21.041 21.041v.567c0 11.214 9.064 20.352 20.25 20.472l3.196 11.982c1.187 4.452 5.217 7.482 9.746 7.482 3.425 0 6.657-1.75 8.513-4.708 7.881-12.561 11.469-24.583 10.968-36.754-.462-11.261-9.697-20.082-21.022-20.082zm2.988 37.827c-1.773-6.336-7.572-10.746-14.167-10.746-3.018 0-5.473-2.455-5.473-5.473v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.503 6.036 5.7.231 5.602-.772 11.269-3.047 17.127z"
+          ></path>
+          <path
+            d="m368.146 269.551h-10.61c-11.603 0-21.041 9.438-21.041 21.041v.567c0 11.214 9.063 20.352 20.251 20.472l3.195 11.982c1.185 4.444 5.209 7.482 9.747 7.482 3.426 0 6.658-1.75 8.514-4.707 7.881-12.563 11.468-24.585 10.968-36.755-.464-11.261-9.699-20.082-21.024-20.082zm2.988 37.828c-1.772-6.338-7.572-10.747-14.166-10.747-3.019 0-5.474-2.455-5.474-5.473v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.504 6.035 5.7.233 5.602-.77 11.27-3.046 17.128z"
+          ></path>
+          <path
+            d="m416.857 311.631 3.195 11.982c1.185 4.444 5.209 7.482 9.747 7.482 3.426 0 6.658-1.75 8.514-4.707 7.881-12.563 11.468-24.585 10.968-36.755-.464-11.262-9.698-20.083-21.023-20.083h-10.61c-11.603 0-21.041 9.438-21.041 21.041v.567c-.001 11.215 9.062 20.353 20.25 20.473zm-5.251-21.039c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.504 6.035 5.7.231 5.602-.771 11.27-3.047 17.128-1.772-6.338-7.572-10.747-14.166-10.747-3.019 0-5.474-2.455-5.474-5.473v-.567z"
+          ></path>
+          <path
+            d="m412.384 146.709c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-214.32c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+          ></path>
+          <path
+            d="m85.866 175.505c0 4.142 3.358 7.5 7.5 7.5h319.019c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-319.019c-4.142 0-7.5 3.358-7.5 7.5z"
+          ></path>
+          <path
+            d="m93.366 219.3h319.019c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-319.019c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+          ></path>
+          <path
+            d="m419.884 248.096c0-4.142-3.357-7.5-7.5-7.5h-319.018c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h319.019c4.142 0 7.499-3.358 7.499-7.5z"
+          ></path>
+          <path
+            d="m93.366 276.892c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h216.047c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5z"
+          ></path>
+          <path
+            d="m377.636 49.338h-199.791c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h199.792c65.817 0 119.363 53.547 119.363 119.364v57.271c0 32.441-12.793 62.786-36.022 85.444-18.376 17.925-32.445 38.462-41.816 61.04l-22.334 53.813-17.371-41.855c-2.795-6.733-6.7-12.889-11.608-18.295-2.785-3.066-7.528-3.294-10.595-.511-3.066 2.784-3.295 7.527-.511 10.594 3.747 4.127 6.728 8.824 8.86 13.962l21.039 50.694c1.714 4.132 5.713 6.801 10.186 6.801s8.472-2.669 10.186-6.801l26.002-62.652c8.589-20.693 21.521-39.552 38.438-56.052 26.145-25.505 40.546-59.663 40.546-96.181v-57.271c0-74.089-60.276-134.365-134.364-134.365z"
+          ></path>
+          <path
+            d="m338.144 362.728c-5.616-1.586-11.409-2.391-17.218-2.391h-186.562c-65.818 0-119.364-53.546-119.364-119.363v-57.271c0-65.817 53.546-119.364 119.364-119.364h13.494c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-13.494c-74.089-.001-134.364 60.275-134.364 134.363v57.271c0 74.088 60.275 134.363 134.364 134.363h186.563c4.43 0 8.851.614 13.14 1.826 3.975 1.122 8.127-1.182 9.257-5.179 1.125-3.985-1.194-8.129-5.18-9.255z"
+          ></path>
+        </g>
+      </svg>
+      <span class="text-white w-2 font-bold p-3 text-center text-lg -mt-3"
+        >Fast Quote</span
+      >
+    </div>
+
+    <div class="flex md:hidden justify-center items-center lg:flex">
+      <svg
+        id="Capa_1"
+        fill="#fff"
+        enable-background="new 0 0 512 512"
+        height="70"
+        viewBox="0 0 512 512"
+        width="70"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="m95.867 155.124c3.425 0 6.657-1.75 8.513-4.708 7.881-12.561 11.469-24.583 10.968-36.754-.463-11.262-9.697-20.083-21.023-20.083h-10.61c-11.602 0-21.041 9.439-21.041 21.041v.567c0 11.214 9.064 20.352 20.25 20.472l3.196 11.982c1.188 4.453 5.218 7.483 9.747 7.483zm-18.193-39.937v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.503 6.036 5.7.23 5.602-.772 11.269-3.047 17.127-1.773-6.336-7.573-10.746-14.167-10.746-3.018 0-5.473-2.455-5.473-5.473z"
+          ></path>
+          <path
+            d="m154.437 93.579h-10.61c-11.602 0-21.041 9.439-21.041 21.041v.567c0 11.214 9.064 20.352 20.25 20.472l3.196 11.982c1.187 4.452 5.217 7.482 9.746 7.482 3.425 0 6.657-1.75 8.513-4.708 7.881-12.561 11.469-24.583 10.968-36.754-.462-11.261-9.697-20.082-21.022-20.082zm2.988 37.827c-1.773-6.336-7.572-10.746-14.167-10.746-3.018 0-5.473-2.455-5.473-5.473v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.503 6.036 5.7.231 5.602-.772 11.269-3.047 17.127z"
+          ></path>
+          <path
+            d="m368.146 269.551h-10.61c-11.603 0-21.041 9.438-21.041 21.041v.567c0 11.214 9.063 20.352 20.251 20.472l3.195 11.982c1.185 4.444 5.209 7.482 9.747 7.482 3.426 0 6.658-1.75 8.514-4.707 7.881-12.563 11.468-24.585 10.968-36.755-.464-11.261-9.699-20.082-21.024-20.082zm2.988 37.828c-1.772-6.338-7.572-10.747-14.166-10.747-3.019 0-5.474-2.455-5.474-5.473v-.567c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.504 6.035 5.7.233 5.602-.77 11.27-3.046 17.128z"
+          ></path>
+          <path
+            d="m416.857 311.631 3.195 11.982c1.185 4.444 5.209 7.482 9.747 7.482 3.426 0 6.658-1.75 8.514-4.707 7.881-12.563 11.468-24.585 10.968-36.755-.464-11.262-9.698-20.083-21.023-20.083h-10.61c-11.603 0-21.041 9.438-21.041 21.041v.567c-.001 11.215 9.062 20.353 20.25 20.473zm-5.251-21.039c0-3.331 2.71-6.041 6.041-6.041h10.61c3.253 0 5.904 2.504 6.035 5.7.231 5.602-.771 11.27-3.047 17.128-1.772-6.338-7.572-10.747-14.166-10.747-3.019 0-5.474-2.455-5.474-5.473v-.567z"
+          ></path>
+          <path
+            d="m412.384 146.709c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-214.32c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+          ></path>
+          <path
+            d="m85.866 175.505c0 4.142 3.358 7.5 7.5 7.5h319.019c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-319.019c-4.142 0-7.5 3.358-7.5 7.5z"
+          ></path>
+          <path
+            d="m93.366 219.3h319.019c4.143 0 7.5-3.358 7.5-7.5s-3.357-7.5-7.5-7.5h-319.019c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5z"
+          ></path>
+          <path
+            d="m419.884 248.096c0-4.142-3.357-7.5-7.5-7.5h-319.018c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h319.019c4.142 0 7.499-3.358 7.499-7.5z"
+          ></path>
+          <path
+            d="m93.366 276.892c-4.142 0-7.5 3.357-7.5 7.5s3.358 7.5 7.5 7.5h216.047c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5z"
+          ></path>
+          <path
+            d="m377.636 49.338h-199.791c-4.142 0-7.5 3.358-7.5 7.5s3.358 7.5 7.5 7.5h199.792c65.817 0 119.363 53.547 119.363 119.364v57.271c0 32.441-12.793 62.786-36.022 85.444-18.376 17.925-32.445 38.462-41.816 61.04l-22.334 53.813-17.371-41.855c-2.795-6.733-6.7-12.889-11.608-18.295-2.785-3.066-7.528-3.294-10.595-.511-3.066 2.784-3.295 7.527-.511 10.594 3.747 4.127 6.728 8.824 8.86 13.962l21.039 50.694c1.714 4.132 5.713 6.801 10.186 6.801s8.472-2.669 10.186-6.801l26.002-62.652c8.589-20.693 21.521-39.552 38.438-56.052 26.145-25.505 40.546-59.663 40.546-96.181v-57.271c0-74.089-60.276-134.365-134.364-134.365z"
+          ></path>
+          <path
+            d="m338.144 362.728c-5.616-1.586-11.409-2.391-17.218-2.391h-186.562c-65.818 0-119.364-53.546-119.364-119.363v-57.271c0-65.817 53.546-119.364 119.364-119.364h13.494c4.142 0 7.5-3.358 7.5-7.5s-3.358-7.5-7.5-7.5h-13.494c-74.089-.001-134.364 60.275-134.364 134.363v57.271c0 74.088 60.275 134.363 134.364 134.363h186.563c4.43 0 8.851.614 13.14 1.826 3.975 1.122 8.127-1.182 9.257-5.179 1.125-3.985-1.194-8.129-5.18-9.255z"
+          ></path>
+        </g>
+      </svg>
+      <span class="text-white w-2 font-bold p-3 text-center text-lg -mt-3"
+        >Submit Enquiry</span
+      >
+    </div>
+
+    <div class="flex justify-center items-center">
+      <svg
+        fill="#fff"
+        height="50px"
+        width="50px"
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 491.52 491.52"
+        xml:space="preserve"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <g>
+            <g>
+              <path
+                d="M127.625,269.048l60.975,45.327c0.708-0.2,1.403-0.439,2.175-0.439h109.968c0.772,0,1.468,0.239,2.176,0.439 l60.975-45.327H127.625z"
+              ></path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M358.232,82.064H133.28H57.672v134.984l48.594,36.122c0.803-0.263,1.619-0.506,2.511-0.506h273.959 c0.893,0,1.713,0.244,2.518,0.508l48.594-36.124V82.064H358.232z M400.12,207.76H91.392c-4.528,0-8.192-3.664-8.192-8.192 s3.664-8.192,8.192-8.192H400.12c4.528,0,8.191,3.664,8.191,8.192C408.312,204.096,404.648,207.76,400.12,207.76z M400.12,146.48 H91.392c-4.528,0-8.192-3.664-8.192-8.192c0-4.528,3.664-8.192,8.192-8.192H400.12c4.528,0,8.191,3.663,8.191,8.192 C408.311,142.817,404.648,146.48,400.12,146.48z"
+              ></path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon
+                points="450.232,140.408 450.232,204.669 487.192,177.368 "
+              ></polygon>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon
+                points="210.052,330.32 245.76,356.864 281.469,330.32 "
+              ></polygon>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon
+                points="245.76,0.992 158.16,65.681 333.352,65.681 "
+              ></polygon>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M44.592,227.744c-0.252-0.187-0.362-0.488-0.589-0.7L0,194.536v69.208v218.677l193.599-143.913L44.592,227.744z"
+              ></path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon
+                points="4.328,177.368 41.288,204.669 41.288,140.408 "
+              ></polygon>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M447.517,227.043c-0.226,0.212-0.337,0.514-0.588,0.7L297.921,338.508L491.52,482.421V263.744v-69.208L447.517,227.043z"
+              ></path>
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M284.187,348.718l-33.539,24.931c-1.449,1.08-3.168,1.616-4.888,1.616c-1.72,0-3.44-0.536-4.888-1.616l-33.539-24.931 L16.56,490.528h458.4L284.187,348.718z"
+              ></path>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <span class="text-white w-2 font-bold p-3 text-center text-lg -mt-3"
+        >Email Us</span
+      >
+    </div>
+  </div>
+
+  <!-- section end -->
+
+  <!-- footer start -->
+  <div
+    class=" w-full grid grid-cols-4 text-white bg-black gap-16 p-9 lg:flex lg:flex-row md:flex flex-col sm:flex sm:flex-col"
+  >
+    <div class="pl-12 leading-9">
+      <h1 class="font-bold text-xl leading-relaxed">Information</h1>
+      <ul>
+        <li>FAQs</li>
+        <li>About Us</li>
+        <li>Brands</li>
+        <li>Direct Imports</li>
+        <li>Delivery Information</li>
+      </ul>
+    </div>
+
+    <div class="leading-9 md:pl-12 sm:pl-12">
+      <h1 class="font-bold text-xl">Support</h1>
+      <ul>
+        <li>FAQs</li>
+        <li>About Us</li>
+        <li>Brands</li>
+        <li>Direct Imports</li>
+        <li>Delivery Information</li>
+      </ul>
+    </div>
+
+    <div class="leading-9 md:pl-12 sm:pl-12">
+      <h1 class="font-bold text-xl">Legal</h1>
+      <ul>
+        <li>FAQs</li>
+        <li>About Us</li>
+        <li>Brands</li>
+        <li>Direct Imports</li>
+        <li>Delivery Information</li>
+      </ul>
+    </div>
+  </div>
+  <div class="flex flex-col bg-black p-8 justify-center">
+    <hr class="h-0.5" />
+    <div class="text-white mt-6 text-sm">
+      Copyright © 2024TechCart.com Pty Ltd. All Rights Reserved.
+    </div>
+  </div>
+  <!-- footer end -->
+
+
+
+   
+     
+     
+
+</body>
+
+</html>
